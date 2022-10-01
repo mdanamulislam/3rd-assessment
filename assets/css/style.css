@@ -1,0 +1,277 @@
+/*!
+ * Template Name/Project Name: Protfolio
+ * Developer Name: Anamul Islam
+ * Conatct: md.anamulislam.me@gmail.com
+ * Visit: https://abc.info
+ */
+ /* common code start */
+ :root{
+    --brand-color: #e84545;
+    --white-color: #fff;
+    --secondery-color: #6c7279;
+ }
+a{
+  text-decoration: none;
+}
+.link-icon a i{
+  border: .5px solid var(--secondery-color);
+  padding: 8px 10px;
+  margin-right: 5px;
+  font-size: 14px;
+  color: var(--secondery-color);
+  transition: .8s all;
+  }
+  .link-icon a i:hover{
+    background: var(--brand-color);
+    color: var(--white-color);
+    border: .5px solid var(--brand-color);
+    transform: rotate(360deg);
+  }
+ /* common code end */
+ /* header start */
+ header{
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+ }
+ /* header end */
+ /* nav code start */
+.navbar-brand h2{
+    color: var(--secondery-color);
+    font-weight: 700;
+}
+.navbar-brand h2 span{
+    color: var(--white-color);
+    font-weight: 300;
+}
+.navbar .navbar-toggler {
+    color: var(--white-color);
+    border: var(--bs-border-width) solid var(--white-color);
+}
+.navbar .nav-link{
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar .nav-link:focus, .navbar .nav-link:hover {
+    color: var(--brand-color);
+}
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color: var(--brand-color);
+}
+.navbar .border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--secondery-color) !important;
+  }
+ /* nav code end */
+ /* header content start */
+ .header-content{
+    padding-top: 100px;
+ }
+ .header-content h1{
+    color: var(--white-color);
+    font-size: 50px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-weight: 600;
+ }
+ .header-content p{
+    color: var(--white-color);
+    font-size: 18px;
+ }
+ .header-content a{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 8px 35px;
+    font-weight: 600;
+    transition: .4s all;
+ }
+ .header-content .btn-primary{
+    background: var(--brand-color);
+    border: none;
+    border-radius: 2px;
+ }
+ .header-content a:hover{
+    background: var(--secondery-color);
+ }
+ /* header content end */
+ /* about section start */
+ .about-us .title-area h2{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.about-us .content-area h2{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+}
+.about-us .content-area p{
+  text-align: justify;
+  font-size: 14px;
+  color: var(--secondery-color);
+}
+.about-us .content-area-header i{
+  color: var(--brand-color);
+}
+.about-us .content-area-header h2{
+  font-size: 20px;
+  font-weight: 400;
+}
+/* about section end */
+/* Image Gellary section start */
+.gellary-img{
+  position: relative;
+  overflow: hidden;
+}
+.gellary-img .gellary-img-overlay{
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: rgba(232, 69, 69, .8);
+  transition: 1s all;
+  cursor: pointer;
+}
+.img-content{
+  transform: translateY(90px);
+}
+.gellary-img img{
+border: 1px solid var(--white-color);
+}
+.gellary-img-overlay .img-content h4{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-bottom: 2px;
+  margin-bottom: 0px;
+}
+.gellary-img-overlay .img-content p{
+  color: var(--white-color);
+  padding: 0px;
+}
+.gellary-img:hover .gellary-img-overlay{
+  top: 0px;
+  left: 0px;
+}
+/* Image Gellary section end */
+/* profile section start */
+.profile .profile-content h3{
+font-size: 20px;
+margin: 0px;
+padding-bottom: 8px;
+}
+.profile .profile-content h4{
+font-size: 12px;
+padding-bottom: 10px;
+text-transform: uppercase;
+color: var(--brand-color);
+}
+.profile .profile-content p{
+font-size: 13px;
+text-align: justify;
+color: var(--secondery-color);
+padding-bottom: 20px;
+/* max-width: 300px; */
+}
+/* profile section end */
+/* clients section start */
+.clients .carousel-background{
+  background: #53354a;
+}
+.clients .carousel-item h2{
+  padding-bottom: 15px;
+  color: var(--white-color);
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -1px;
+  max-width: 450px;
+}
+.clients .carousel-item p{
+  padding-bottom: 30px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.carousel-background .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+/* clients section end */
+/* download section start */
+.download-section .download-content{
+  text-align: center;
+}
+.download-content h2{
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+.download-content p{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.download-section a{
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 8px 45px;
+  font-weight: 400;
+  transition: .4s all;
+  display: inline-block;
+  margin: 25px 0px 10px 0px;
+}
+.download-section .btn-primary{
+  background: var(--brand-color);
+  border: none;
+  border-radius: 2px;
+}
+/* download section end */
+/* big footer start */
+.big-footer{
+  background: #3a3e64;
+}
+.big-footer h4{
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+.big-footer p{
+  font-size: 13px;
+  color: var(--white-color);
+  font-weight: 300;
+}
+.big-footer address{
+  font-size: 13px;
+  color: var(--white-color);
+  font-weight: 300;
+}
+.big-footer .link-icon i{
+  border: .5px solid var(--white-color);
+  color: var(--white-color);
+}
+/* big footer end */
+/* short footer start */
+.short-footer{
+  background: #313454;
+  text-align: center;
+}
+.short-footer p{
+  margin: 0px;
+  color: #808080;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.short-footer p a{
+  color: var(--white-color);
+  transition: .4s all;
+}
+.short-footer p a:hover{
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+/* short footer end */
