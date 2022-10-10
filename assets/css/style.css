@@ -172,12 +172,15 @@ font-size: 13px;
 text-align: justify;
 color: var(--secondery-color);
 padding-bottom: 20px;
-/* max-width: 300px; */
 }
 /* profile section end */
 /* clients section start */
 .clients .carousel-background{
-  background: #53354a;
+  background: url(../img/carosel.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
 }
 .clients .carousel-item h2{
   padding-bottom: 15px;
